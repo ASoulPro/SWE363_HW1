@@ -1,0 +1,73 @@
+/* I used grid and flexbox since they are modern featcure and I wanted to experinment with them */
+
+/* this is to override default margin and padding of all elements*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+  background-color: lightgray;
+}
+.logo {
+  flex: 1;
+  border-style: solid;
+}
+.nav {
+  margin-left: 25%;
+  flex: 5;
+  align-self: flex-end;
+  justify-self: normal;
+  padding-bottom: 10px;
+}
+.nav li {
+  display: inline-block;
+  padding: 0px 20px;
+  justify-self: center;
+}
+li,
+a,
+p {
+  font-size: 1.2rem;
+}
+p {
+  margin: 10px 0px;
+}
+.login_logo {
+  flex: 1;
+
+  border-style: solid;
+}
+
+.container {
+  margin: 15px;
+}
+
+.map {
+  margin: 0px 50px 25px 50px;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+.article {
+  align-self: center;
+}
+/* repeate(2, 1fr) is equivallent to 1fr  1fr */
+.graphs {
+  margin: 0px 10px;
+  background-color: #e2e4e7;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          class="logo"
+          src="./images/gis_logo.png"
+          alt="Logo"
+          width="100"
+          height="100"
+      /></a>
+      <ul class="nav">
+        <li>MAPS</li>
+        <li>RESOURCES</li>
+        <li>EVENTS</li>
+        <li>PRODUCTS</li>
+      </ul>
+      <div>
+        <img
+          class="login_logo"
+          src="./images/login_logo.jpg"
+          alt="Login Logo"
+          width="100"
+          height="100"
+        />
+        <p>
+          <a href="SignIn.html">Sign in</a> / <a href="SignUp.html">Sign up</a>
+        </p>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <form>
+        <label for="userName">User Name</label><br />
+        <input
+          type="text"
+          id="userName"
+          name="userName"
+          placeholder="Please enter User Name"
+        />
+        <br />
+
+        <label for="firstName">First Name</label><br />
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="Please enter your first name"
+        />
+        <br />
+
+        <label for="lastName">Last Name</label><br />
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          placeholder="Please enter your last name"
+        />
+        <br />
+
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Please enter your email address"
+        />
+        <br />
+
+        <label for="password">Password</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Please enter your password"
+        /><br />
+
+        <label for="gender">gender</label><br />
+        <select id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option> </select
+        ><br />
+
+        <label for="country">country</label><br />
+        <select id="country">
+          <option value="Saudi Arabia">Saudi Arabia</option>
+          <option value="Yemen">Yemen</option>
+          <option value="Japan">Japan</option>
+          <option value="France">France</option>
+          <option value="Germany">Germany</option>
+          <option value="Egypt">Egypt</option> </select
+        ><br /><br />
+
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+  </body>
+</html>
